@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/orange"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:text="Chi Tiết Món Ăn"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:id="@+id/img_cart"
+            android:layout_weight="1"
+            android:src="@drawable/ic_cart_detail"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_food"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:background="#FF6347"
+            android:paddingLeft="8dp"
+            android:paddingTop="4dp"
+            android:paddingRight="8dp"
+            android:textStyle="bold"
+            android:paddingBottom="4dp"
+            android:visibility="gone"
+            android:id="@+id/tv_discount"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_marginStart="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/tv_title"
+        />
+    <LinearLayout
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:id="@+id/tv_price_discount"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_price_root"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="5dp"
+            />
+    </LinearLayout>
+    <View
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/orange"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Mô Tả"
+        android:textColor="#FF4500"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_description"/>
+
+
+
+    <LinearLayout
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/cs_them_gio_hang"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Thêm Vào Giỏ Hàng"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:id="@+id/tv_them_vao_gio_hang"
+            />
+        <TextView
+            android:background="@drawable/cs_mua_ngay"
+            android:layout_width="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Mua Ngay"
+            android:padding="10dp"
+            android:id="@+id/tv_mua_ngay"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_intro"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textColor="#3d33a8"
+        android:text="ShoppBee"
+        />
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_width="392dp"
+        android:layout_height="312dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thích\nĂn Uống"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="#3d33a8" />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#3d33a8"
+        android:text="Tất cả các món ăn ngon ở đây nè!!!"
+        />
+    <TextView
+        android:id="@+id/tv_bat_dau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#3d33a8"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="Bắt Đầu" />
+
+</LinearLayout>

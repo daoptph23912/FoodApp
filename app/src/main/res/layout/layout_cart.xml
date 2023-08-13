@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/img_food_detail"
+                        android:layout_width="110dp"
+                        android:scaleType="centerCrop"
+                        android:layout_height="100dp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginStart="10dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:id="@+id/tv_title_food"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textSize="16sp"
+                        android:textColor="#FF6347"
+                        android:textStyle="bold"
+                        android:id="@+id/tv_price_food"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_marginTop="12dp"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <ImageView
+
+                            android:src="@drawable/ic_minus"
+                            android:id="@+id/img_minus"
+                            android:layout_width="30dp"
+                            android:background="@drawable/cs_bg_add_minus"
+                            android:layout_height="25dp"/>
+                        <TextView
+                            android:layout_marginStart="15dp"
+                            android:layout_width="30dp"
+                            android:text="1"
+                            android:id="@+id/tv_amount"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:background="@drawable/cs_amount"
+                            android:layout_height="25dp"/>
+                        <ImageView
+                            android:id="@+id/img_plus"
+                            android:layout_marginStart="15dp"
+                            android:layout_width="30dp"
+                            android:src="@drawable/ic_add"
+                            android:background="@drawable/cs_bg_add_minus"
+                            android:layout_height="25dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_xoa"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cs_bg_lam_phan_hoi"
+                    android:gravity="center"
+
+                    android:padding="10dp"
+                    android:text="Xóa" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"/>
+
+
+
+    </LinearLayout>
